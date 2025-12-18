@@ -63,6 +63,7 @@ def load_dataset(config_path, reduce_corpus):
     # Use a subset for testing purposes
     if reduce_corpus:
         corpus = corpus[:1000]
+    queries = queries[:1200]
 
     return queries, qrels, corpus, true_answers
 
