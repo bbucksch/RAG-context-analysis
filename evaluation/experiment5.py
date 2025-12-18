@@ -61,6 +61,7 @@ def load_dataset(config_path):
     # Limit to two queries to avoid single-query dimension issues in Contriever
     # queries = queries[:2]
     # corpus = corpus[:2]
+    queries = queries[:1200]
 
     return queries, qrels, corpus, true_answers
 
